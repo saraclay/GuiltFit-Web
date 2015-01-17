@@ -1,2 +1,4 @@
-# GuiltFit-Web
-Website for GuiltFit Android app
+Persona-Parallax
+================
+
+Initial prototype for Persona website

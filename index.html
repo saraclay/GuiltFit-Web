@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="Guilt Fit">
+
+<title>Guilt Fit</title>
+
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/parallax.css">
+<link rel="icon" href="favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<!--Can be used with license: https://www.youtube.com/watch?v=4HuPwXUWF9o -->
+<video autoplay loop>
+    <source src="running.mp4" type="video/mp4">
+</video>
+
+<!-- logo animation effect -->
+<script>
+    $(window).scroll(function() {
+        $('#animatedElement').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
+</script>
+
+<script>
+    $('#animatedElement').click(function() {
+        $(this).addClass("slideUp");
+    });
+</script>
+
+<!--smooth scroll-->
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</head>
+
+<body>
+<div id="slide0" class="slide">
+<div id="nav">
+    <div class="text">
+<a href="#home">Home</a> 
+<a href="#about">About</a> 
+<a href="#works">How It Works</a>
+<a href="#team">Team</a> 
+    </div>
+</div>
+<div id="home">
+<div id="content">
+    <div id="object" class="slideUp">
+    <h1>Guilt Fit</h1>
+    </div>
+
+<div class="tagline">
+    Your motivation to get healthy.
+</div>
+    <center><a href="#" class="button btnFade btnBlueGreen">Let's Go!</a></center>
+
+<center><a href="#about" rel="pulse" class="down-arrow pulse"><img src="img/down-arrow.png" width="60px" height="60px";></a></center>
+</div>
+</div>
+</div>
+
+<div id="about" class="slide">
+    <div id="content">
+<div class="blurb">
+Eating too much after thanksgiving. 
+<br>
+Going weeks without going for a jog.
+<br><br>
+We've been there, and we know it takes a lot of motivation.
+</div>
+
+
+<br>
+
+
+</div>
+</div>
+
+<div id="works" class="slide">
+    <div id="content">
+<div class="blurb">
+All it takes is a button. 
+<br><br>
+<center>
+    <div class="round-button"><div class="round-button-circle">
+    <br><br>
+        Motivate
+    </div></div>
+    <br>
+    Or at least that's what we hope.
+</center>
+<br>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div id="team" class="slide">
+<div id="content">
+<div class="contact-title">
+Connect
+<div class="social-media">
+    <a href="https://www.facebook.com/UsePersona" target="_blank"><img src="img/icon_facebook_before.png" onmouseout="this.src='img/icon_facebook_before.png'" onmouseover="this.src='img/icon_facebook_after.png'"></a>
+    <a href="https://twitter.com/use_persona" target="_blank"><img src="img/icon_twitter_before.png" onmouseout="this.src='img/icon_twitter_before.png'" onmouseover="this.src='img/icon_twitter_after.png'"></a>
+    <a href="https://www.linkedin.com/company/usepersona" target="_blank"><img src="img/icon_linkedin_before.png" onmouseout="this.src='img/icon_linkedin_before.png'" onmouseover="this.src='img/icon_linkedin_after.png'"></a>
+    <a href="https://plus.google.com/+Usepersonagoogle/" target="_blank"><img src="img/icon_google-plus_before.png" onmouseout="this.src='img/icon_google-plus_before.png'" onmouseover="this.src='img/icon_google-plus_after.png'"></a>
+</div>
+
+</div>
+</div>
+
+<footer>
+    <hr />
+<div id="footer-logo">
+    <a href="http://www.usepersona.com" target="_blank"><img src="img/logo-footer.png" width="175px"></a>
+</div>
+<div class="footer-links">
+<a href="http://usepersona.com/about" target="_blank">About</a>
+<a href="#" target="_blank">Jobs</a>
+<a href="http://usepersona.com/tos" target="_blank">TOS</a> 
+<a href="http://usepersona.com/privacy" target="_blank">Privacy</a> 
+<a href="http://usepersona.com/faq" target="_blank">FAQ</a>
+</div>
+</footer>
+
+</div>
