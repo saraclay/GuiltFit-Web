@@ -102,6 +102,9 @@ a.button {
     text-decoration:none;
 }
 
+/*Chart Stuff*/
+
+
 /*Header Stuff*/
 h1 {
 	font-size:120px;
@@ -138,6 +141,31 @@ h4 {
 .down-arrow {
 	padding-top:5%;
 	opacity:0.7;
+}
+
+.bar-code {
+    width: 175px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 25px;
+}
+
+.bar-code-color-first {
+	width: 175px;
+	background-color:#48A497;
+	font-size:12px;
+}
+
+.bar-code-color-second {
+	width: 175px;
+	background-color:rgba(73,188,170,0.4);
+	font-size:12px;
+}
+
+.bar-code-color-third {
+	width: 175px;
+	background-color:rgba(47,76,61,0.4);
+	font-size:12px;
 }
 
 /* Pulse */

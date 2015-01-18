@@ -43,15 +43,18 @@ video {
 #community{
   background-color:#fff;
 }
-#gen-motivations{
+#community-video{
   background-color:#9FB8AD;
 }
-#spec-motivations{
+#gen-motivations{
   background-color:#CED0CE;
 }
+#spec-motivations{
+  background-color:#fff;
+}
 #reward-system {
-    background-color:#fff;
+    background-color:#9FB8AD;
 }
 #final {
-   background-color:#9FB8AD; 
+   background-color:#CED0CE; 
 }
