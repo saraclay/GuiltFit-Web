@@ -168,6 +168,22 @@ h4 {
 	font-size:12px;
 }
 
+/*Video Background*/
+#video-screen {
+	height:400px;
+	width:350px;
+	z-index:-1;
+	display:block;
+
+}
+
+#player {
+	height:300px;
+	width:250px;
+	z-index:3;
+	display:block;
+}
+
 /* Pulse */
 @-webkit-keyframes pulse {
   25% {

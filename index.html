@@ -86,7 +86,7 @@ $(function() {
 </div>
     <center><a href="#" class="button btnFade btnBlueGreen">Let's Go!</a></center>
 
-<center><a href="#team" rel="pulse" class="down-arrow pulse"><img src="img/down-arrow.png" width="60px" height="60px";></a></center>
+<center><a href="#need" rel="pulse" class="down-arrow pulse"><img src="img/down-arrow.png" width="60px" height="60px";></a></center>
 </div>
 </div>
 </div>
@@ -95,6 +95,69 @@ $(function() {
     <div id="content">
 <div class="blurb">
 The Need
+<br><br>
+Women Aged 18 and Older Engaging 
+<br>
+in Adequate Physical Activity, 
+<br>
+By Age/Sex (2007-2009)
+<br><br>
+
+    <canvas id="activity" width="600" height="400"></canvas>
+
+<script>
+            // bar chart data
+            var barData3 = {
+                labels : ["Total","18-24 Years","25-44 Years","45-64 Years", "65 Years and Older"],
+                datasets : [
+                    {
+                        fillColor : "#48A497",
+                        strokeColor : "#48A4D1",
+                        data : [14.7,17.4,17.1,14.8,7.9]
+                    },
+                    {
+                        fillColor : "rgba(73,188,170,0.4)",
+                        strokeColor : "rgba(72,174,209,0.4)",
+                        data : [21.1,32.3,24.1,17.5,11.3]
+                    }
+
+                ]
+            }
+            // get bar chart canvas
+            // var ethnicity = document.getElementById("ethnicity").getContext("2d");
+            // // draw bar chart
+            // new Chart(ethnicity).Bar(barData);
+
+            var inView3 = false;
+
+function isScrolledIntoView(elem3)
+{
+    var docViewTop3 = $(window).scrollTop();
+    var docViewBottom3 = docViewTop + $(window).height();
+
+    var elemTop3 = $(elem3).offset().top;
+    var elemBottom3 = elemTop + $(elem3).height();
+
+    return ((elemTop3 <= docViewBottom3) && (elemBottom3 >= docViewTop3));
+}
+
+$(window).scroll(function() {
+    if (isScrolledIntoView('#activity')) {
+        if (inView3) { return; }
+        inView3 = true;
+        new Chart(document.getElementById("activity").getContext("2d")).Bar(barData3);
+    } else {
+        inView3 = false;  
+    }
+});
+
+</script>
+<center>
+    <div class="bar-code">
+    <div class="bar-code-color-first">Female</div>
+    <div class="bar-code-color-second">Male</div>
+    </div>
+</center>
 <br><br>
 Women Aged 18 and Older Engaging 
 <br>
@@ -119,9 +182,33 @@ By Race/Ethnicity (2007)
                 ]
             }
             // get bar chart canvas
-            var ethnicity = document.getElementById("ethnicity").getContext("2d");
-            // draw bar chart
-            new Chart(ethnicity).Bar(barData);
+            // var ethnicity = document.getElementById("ethnicity").getContext("2d");
+            // // draw bar chart
+            // new Chart(ethnicity).Bar(barData);
+
+            var inView = false;
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+}
+
+$(window).scroll(function() {
+    if (isScrolledIntoView('#ethnicity')) {
+        if (inView) { return; }
+        inView = true;
+        new Chart(document.getElementById("ethnicity").getContext("2d")).Bar(barData);
+    } else {
+        inView = false;  
+    }
+});
+
 </script>
 <br><br>
 Women Aged 18 and Older Engaging in 
@@ -135,7 +222,7 @@ By Age and Poverty Status (2007)
 
 <script>
             // bar chart data
-            var barData = {
+            var barData2 = {
                 labels : ["18-24 Years","25-44 Years","45-64 Years","65 Years and Older"],
                 datasets : [
                     {
@@ -158,9 +245,33 @@ By Age and Poverty Status (2007)
                 ]
             }
             // get bar chart canvas
-            var poverty = document.getElementById("poverty").getContext("2d");
-            // draw bar chart
-            new Chart(poverty).Bar(barData);
+            // var poverty = document.getElementById("poverty").getContext("2d");
+            // // draw bar chart
+            // new Chart(poverty).Bar(barData);
+
+            var inView2 = false;
+
+function isScrolledIntoView(elem2)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elem2Top = $(elem2).offset().top;
+    var elem2Bottom = elem2Top + $(elem2).height();
+
+    return ((elem2Top <= docViewBottom) && (elem2Bottom >= docViewTop));
+}
+
+$(window).scroll(function() {
+    if (isScrolledIntoView('#poverty')) {
+        if (inView2) { return; }
+        inView2 = true;
+        new Chart(document.getElementById("poverty").getContext("2d")).Bar(barData2);
+    } else {
+        inView2 = false;  
+    }
+});
+
 </script>
 <center>
     <div class="bar-code">
@@ -198,11 +309,11 @@ All it takes is a button.
 <div id="community" class="slide">
     <div id="content">
 <div class="blurb">
-A Community of Motivators 
+Community of Motivators 
 <br><br>
-<img src="img/screens/welcome.png" height="400px" width="275px">
-<img src="img/screens/friendsetup.png" height="400px" width="275px">
-<img src="img/screens/selfsetup.png" height="400px" width="275px">
+<img src="img/screens/community2.png" height="400px" width="275px">
+<img src="img/screens/newsfeed.png" height="400px" width="275px">
+<img src="img/screens/facts2.png" height="400px" width="275px">
 </div>
 
 </div>
@@ -212,9 +323,14 @@ A Community of Motivators
 <div id="community-video" class="slide">
     <div id="content">
 <div class="blurb">
-A Community of Motivators 
+Community of Motivators 
 <br><br>
--video goes here whoo-
+<!--<img src="img/screens/svideo3.png" height="400px" width="275px" z-index="-1">-->
+<!--<iframe src="http://www.youtube.com/embed/zNQ8vQ7cKwo" height="300px" width="600px" frameborder="0" allowfullscreen></iframe>-->
+<iframe src="http://player.vimeo.com/video/117104590" width="800" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
+        </div>
+
 </div>
 
 </div>
@@ -224,10 +340,10 @@ A Community of Motivators
 <div id="gen-motivations" class="slide">
     <div id="content">
 <div class="blurb">
-General Motivations
+Guilt Fit
 <br><br>
-<img src="img/screens/friendskilllevel.png" height="400px" width="275px">
-<img src="img/screens/leaderboard.png" height="400px" width="275px">
+<img src="img/screens/notifyme.png" height="400px" width="275px">
+<img src="img/screens/motivationstyles.png" height="400px" width="275px">
 <img src="img/screens/main.png" height="400px" width="275px">
 </div>
 
@@ -240,7 +356,9 @@ General Motivations
 <div class="blurb">
 Specific Motivations
 <br><br>
+<img src="img/screens/facts3.png" height="400px" width="275px">
 <img src="img/screens/socialmedia2.png" height="400px" width="275px">
+<img src="img/screens/notifications.png" height="400px" width="275px">
 </div>
 
 </div>
@@ -252,8 +370,9 @@ Specific Motivations
 <div class="blurb">
 Reward System
 <br><br>
-<img src="img/screens/videospalsh.png" height="400px" width="275px">
-<img src="img/screens/svideo3.png" height="400px" width="275px">
+<img src="img/screens/mypage2.png" height="400px" width="275px">
+<img src="img/screens/leaderboard.png" height="400px" width="275px">
+<img src="img/screens/greatjob.png" height="400px" width="275px">
 </div>
 
 </div>
