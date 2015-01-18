@@ -31,12 +31,27 @@ video {
 .slide:nth-child(even) {
     background-attachment: fixed;
 }
-#about{
-  background-color:#9FB8AD;
-}
-#works{
-  background-color:#CED0CE;
-}
 #team{
   background-color:#fff;
+}
+#need{
+  background-color:#9FB8AD;
+}
+#app{
+  background-color:#CED0CE;
+}
+#community{
+  background-color:#fff;
+}
+#gen-motivations{
+  background-color:#9FB8AD;
+}
+#spec-motivations{
+  background-color:#CED0CE;
+}
+#reward-system {
+    background-color:#fff;
+}
+#final {
+   background-color:#9FB8AD; 
 }
