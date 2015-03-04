@@ -1,4 +1,5 @@
-Persona-Parallax
+GuiltFit Web
 ================
 
-Initial prototype for Persona website
+Website for the Guilt Fit app we made for the Jawbone Women's Health Hackathon
+Check it out: http://uscgirlsintech.org/guilt-fit/ 
